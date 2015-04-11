@@ -4,3 +4,5 @@
 [10-Apr-2015 19:51:53 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 776899 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454
 [10-Apr-2015 19:52:37 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 262144 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454
 [10-Apr-2015 19:57:43 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 839617 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454
+[11-Apr-2015 13:25:37 America/New_York] PHP Fatal error:  Unsupported operand types in /home/ajquirk/public_html/modules/block/block.module on line 519
+[11-Apr-2015 13:27:19 America/New_York] PHP Fatal error:  Unsupported operand types in /home/ajquirk/public_html/modules/block/block.module on line 519

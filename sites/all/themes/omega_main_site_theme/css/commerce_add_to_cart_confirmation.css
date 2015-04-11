@@ -1,0 +1,76 @@
+/**
+* Add to cart popin.
+*/
+/* Overlay */
+div.commerce_add_to_cart_confirmation_overlay {
+}
+
+div.messages.commerce-add-to-cart-confirmation {
+}
+
+/* Close button */
+div.messages.commerce-add-to-cart-confirmation .message-inner .commerce-add-to-cart-confirmation-close {
+}
+
+/* Title */
+div.messages.commerce-add-to-cart-confirmation .message-inner .added-product-title {
+}
+
+/* Button */
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper:after {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button.checkout {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button.continue {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button.continue .commerce-add-to-cart-confirmation-close {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button.checkout:hover,
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button.continue:hover {
+}
+
+div.messages.commerce-add-to-cart-confirmation .message-inner .button-wrapper .button a {
+}
+
+/* Product display */
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .content .field-name-field-images {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .content .field-name-field-images img {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .commerce-product-sku .commerce-product-sku-label,
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .field .views-label,
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .field .field-label {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .field {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .field .field-label {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .views-field-commerce-total {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .views-field-commerce-total .views-label {
+}
+
+div.messages.commerce-add-to-cart-confirmation .view-confirm-message-product-display .view-content .views-field-commerce-total .field-content {
+}

@@ -1,0 +1,6 @@
+[10-Apr-2015 19:50:13 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 72 bytes) in /home/ajquirk/public_html/includes/theme.inc on line 1250
+[10-Apr-2015 19:51:27 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1844069 bytes) in /home/ajquirk/public_html/includes/database/database.inc on line 2171
+[10-Apr-2015 19:51:29 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 1844069 bytes) in /home/ajquirk/public_html/includes/database/database.inc on line 2171
+[10-Apr-2015 19:51:53 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 776899 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454
+[10-Apr-2015 19:52:37 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 262144 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454
+[10-Apr-2015 19:57:43 America/New_York] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 839617 bytes) in /home/ajquirk/public_html/includes/cache.inc on line 454

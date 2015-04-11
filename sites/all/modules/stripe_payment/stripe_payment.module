@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * This custom module adds a form to the Checkout process that handles payment processing using Stripe.
+ */
+
+define('STRIPEFORM_PUB_KEY', '');
+define('STRIPEFORM_PRIVATE_KEY', '');
+
+/**
+ * Implements hook_commerce_payment_method_info().
+ */
+function stripe_payment_commerce_payment_method_info() {
+  $payment_methods['stripe'] = array(
+    'title' => t('Stripe (custom module)'),
+    'display_title' => t('Credit Card'),
+    'active' => TRUE,
+    'terminal' => FALSE,
+    'offsite' => FALSE,
+  );
+  
+  return $payment_methods;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function stripe_payment_menu() {
+  $items = array();
+  
+  $items['stripeform'] = array(
+    'title' => 'Stripe Form',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('stripeform_form'),
+    'access callback' => TRUE,
+  );
+  
+  return $items;
+}
+
+/**
+ * Form for payment.
+ */
+function _stripe_payment_credit_card_form() {
+  module_load_include('inc', 'commerce_payment', 'includes/commerce_payment.credit_card');
+  
+  $credit_card_fields = array(
+    'owner' => '',
+    'number' => '',
+    'exp_month' => '',
+    'exp_year' => '',
+    'code' => '',
+  );
+  
+  $form = commerce_payment_credit_card_form($credit_card_fields);
+  
+  // Add a css class so that we can easily identify Stripe related input fields
+  // Do not require the fields
+  //
+  // Remove "name" attributes from Stripe related input elements to
+  // prevent card data to be sent to Drupal server
+  // (see https://stripe.com/docs/tutorials/forms)
+  foreach (array_keys($credit_card_fields) as $key) {
+    $credit_card_field = &$form['credit_card'][$key];
+    $credit_card_field['#attributes']['class'][] = 'stripe';
+    $credit_card_field['#required'] = FALSE;
+    $credit_card_field['#post_render'][] = '_commerce_stripe_credit_card_field_remove_name';
+  }
+  
+  return $form;
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function stripe_payment_libraries_info() {
+  return array(
+    'stripe-php' => array(
+      'name' => 'Stripe API Client Library for PHP',
+      'vendor url' => 'https://stripe.com/',
+      'download url' => 'https://github.com/stripe/stripe-php',
+      'dependencies' => array(),
+      'version arguments' => array(
+        'file' => 'VERSION',
+        'pattern' => '/(\d+\.\d+(\.\d+)?)/',
+      ),
+      'files' => array(
+        'php' => array(
+          'lib/Stripe.php',
+        ),
+      ),
+    ),
+  );
+}
+ 

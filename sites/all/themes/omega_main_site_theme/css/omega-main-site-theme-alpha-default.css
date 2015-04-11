@@ -1,0 +1,364 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+body {
+    /* font-family: "Myriad Pro", arial, helvetica, sans-serif; */
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+}
+
+/* HEADER */
+#zone-top-nav-wrapper {
+    background-color: black;
+	/**position: fixed;
+	width: 100%;
+	z-index: 999;**/
+	height: 30px;
+}
+
+#zone-main-nav-wrapper {
+    background-color: #333232;
+	height: 75px;
+	/**padding-top: 30px;**/
+}
+
+/** NOTE:
+	Remember to remove the above commented out lines
+	once I am ready to set the top nav bar
+	as fixed to the top, because I can't figure out
+	yet how to not have it above the overlay.
+**/
+
+#region-top-nav ul.menu, #region-main-nav ul.menu {
+    list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#region-top-nav li.leaf {
+    display: inline;
+	float: right;
+	padding: 0px;
+}
+
+#top-menu-cart, #top-menu-login, #top-menu-logout {
+    display: block;
+	line-height: 30px;
+    font-family: "PT Sans", arial, helvetica, sans-serif;
+	font-size: 12px;
+	height: 30px;
+	padding: 0px 10px;
+}
+
+#top-menu-login {
+    background-color: #b70101;
+}
+
+#top-menu-logout {
+    background-color: #0b9900;
+}
+
+#region-main-nav a.menu {
+    display: block;
+	width: 60px;
+}
+
+#region-main-nav li.leaf, #region-main-nav li.first leaf {
+    display: inline;
+	float: left;
+}
+
+#menu-link-shop, #menu-link-about-us, #menu-link-hall-of-legends, #menu-link-contact-us {
+    font-family: "Myriad Pro Regular", "PT Sans", arial, helvetica, sans-serif;
+	font-size: 16px;
+    color: white;
+	text-decoration: none;
+	line-height: 60px;
+	margin: 15px;
+}
+
+#block-views-placeholder-image-block {
+	height: 480px;
+}
+
+/** FRONT PAGE VIEWS **/
+/**
+.views-field-field-slideshow-picture-title, .views-field-field-slideshow-picture-tagline {
+	color: white;
+	position: relative;
+	left: 120px;
+}
+
+.views-field-field-slideshow-picture-title {
+    font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 60px;
+	bottom: 215px;
+	text-transform: uppercase;
+}
+
+.views-field-field-slideshow-picture-tagline {
+    font-family: "PT Sans", arial, helvetica, sans-serif;
+	font-size: 18px;
+	width: 360px;
+	bottom: 225px;
+	line-height: 100%;
+}
+**/
+
+#slideshow-nav {
+    width: 200px;
+    position: relative;
+	left: 458px; /** change this when more links are added or else it won't be centered **/
+	padding: 0;
+	height: 10px;
+	margin-top: 5px;
+}
+
+#slideshow-nav a {
+    display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	text-indent: -999em;
+	background: #fff;
+	border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 0 1px 1px #636ebb;
+    margin-right: 5px;
+}
+
+#slideshow-nav a.activeSlide {
+    background: #04137b;
+}
+
+#zone-postscript {
+    padding: 20px 0px;
+}
+
+.view-ad-push {
+    border-width: 5px;
+	border-style: solid;
+	border-color: #323232;
+	height: 290px;
+}
+
+#block-views-ad-push-block .views-field-field-block-title {
+    font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 36px;
+	color: white;
+    text-transform: uppercase;
+    word-spacing: 10000px;
+	line-height: 120%;
+	position: relative;
+	bottom: 150px;
+	left: 20px;
+}
+
+#block-views-ad-push-block-1 .views-field-field-block-title {
+    font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 36px;
+	color: white;
+    text-transform: uppercase;
+    word-spacing: 10000px;
+	line-height: 120%;
+	position: relative;
+	bottom: 150px;
+	left: 20px;
+}
+
+.view-display-id-block_2 {
+    background-color: #323232;
+}
+
+.quicktabs-style-nostyle {
+    background-color: #323232;
+	margin: 0px;
+}
+
+.view-social-media-widgets {
+    background-color: #323232;
+}
+
+/* FOOTER */
+#zone-footer-preface, #zone-footer-main {
+	color: white;
+	background-color: #1c1c1c;
+}
+
+#region-footer-preface {
+    font-family: "PT Sans", arial, helvetica, sans-serif;
+}
+
+#region-footer-preface .region-footer-preface-inner {
+	border-bottom: 1px solid white;
+	height: 80px;
+}
+
+#region-footer-preface .view-content {
+    position: relative;
+	top: 20px;
+}
+
+#region-footer-preface .views-field-field-title-text {
+    text-align: center;
+	font-size: 16px;
+}
+
+#region-footer-preface .views-field-field-tagline {
+    text-align: center;
+	font-size: 10px;
+}
+
+#zone-footer-main {
+    padding: 10px 0px;
+}
+
+#region-footer-signup .block-block {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+	font-size: 18px;
+	height: 25px;
+}
+
+.block-menu h2.block-title {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+	font-size: 18px;
+	letter-spacing: 0em;
+}
+
+/**
+#block-menu-menu-connect-with-us .content ul.menu {
+    list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+} **/
+
+#region-footer-right li.leaf {
+    display: block;
+	height: 35px;
+	padding: 5px;
+}
+
+.footer-facebook, .footer-twitter, .footer-instagram {
+    background-repeat: no-repeat;
+	background-position: 0px center;
+	display: block;
+	height: 35px;
+	padding-left: 45px;
+	line-height: 30px;
+}
+
+.footer-facebook {
+    background-image: url("../images/facebook-round.png");
+}
+
+.footer-twitter {
+    background-image: url("../images/twitter-round.png");
+}
+
+.footer-instagram {
+    background-image: url("../images/instagram-round.png");
+}
+
+.block-menu-company-info h2.block-title, .block-menu-site-info h2.block-title, .block-menu-legal h2.block-title {
+    font-size: 14px;
+}
+
+.block-menu-company-info li.leaf, .block-menu-site-info li.leaf, .block-menu-legal li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	line-height: 105%;
+}
+
+.block-menu a:link, .block-menu a:visited {
+    text-decoration: none;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	color: white;
+}
+
+.block-menu-connect-with-us a:link, .block-menu-connect-with-us a:visited {
+    font-size: 14px;
+}
+
+#region-footer-bottom {
+    padding-top: 50px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/* CONTENT PAGE VIEWS */
+#region-content {
+    background-color: white;
+	min-height: 500px;
+	margin-bottom: 20px;
+}
+
+.field-name-field-page-title {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+	font-size: 30px;
+	margin: 20px;
+}
+
+.field-name-body {
+    font-family: arial, helvetica, sans-serif;
+	margin: 20px;
+}
+
+/* STORE FRONT */
+.view-shop .view-header {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.view-shop .views-view-grid {
+    border: none;
+}
+
+.view-shop .view-content {
+    margin: 0px 20px;
+}
+
+td.store-row {
+    padding: 0px 0px 20px;
+}
+
+.view-shop .views-field-title {
+    font-family: arial, helvetica, sans-serif;
+}
+
+.view-shop a:link, .view-shop a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.view-shop .views-field-commerce-price {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* PRODUCT DISPLAY */
+.commerce-product-title {
+    font-family: "Bebas Neue", arial, helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.commerce-product-sku {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 10pt;
+    color: #737373;
+}
+
+.field-name-commerce-price {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.product-display-body .field-name-body {
+    margin: 40px 20px 0px 0px;
+}

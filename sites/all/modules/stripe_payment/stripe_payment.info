@@ -1,0 +1,7 @@
+name = Stripe Payment Gateway
+description = Provides a form utilizing Stripe to process purchases by customers.
+core = 7.x
+package = Commerce (custom)
+dependencies[] = commerce
+dependencies[] = commerce_payment
+dependencies[] = libraries

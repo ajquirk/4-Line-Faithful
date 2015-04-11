@@ -6,7 +6,9 @@ body {
 	background-attachment: fixed;
 }
 
-/* HEADER */
+/**
+ * HEADER    
+ */
 #zone-top-nav-wrapper {
     background-color: black;
 	/**position: fixed;
@@ -80,7 +82,10 @@ body {
 	height: 480px;
 }
 
-/** FRONT PAGE VIEWS **/
+/**
+ * FRONT PAGE VIEWS
+ */
+
 /**
 .views-field-field-slideshow-picture-title, .views-field-field-slideshow-picture-tagline {
 	color: white;
@@ -182,7 +187,9 @@ body {
     background-color: #323232;
 }
 
-/* FOOTER */
+/**
+ * FOOTER
+ */
 #zone-footer-preface, #zone-footer-main {
 	color: white;
 	background-color: #1c1c1c;
@@ -291,7 +298,9 @@ body {
 	font-size: 10px;
 }
 
-/* CONTENT PAGE VIEWS */
+/**
+ * CONTENT PAGE VIEWS
+ */
 #region-content {
     background-color: white;
 	min-height: 500px;
@@ -309,7 +318,9 @@ body {
 	margin: 20px;
 }
 
-/* STORE FRONT */
+/**
+ * STORE FRONT
+ */
 .view-shop .view-header {
     font-family: "Bebas Neue", arial, helvetica, sans-serif;
     font-size: 30px;
@@ -342,7 +353,14 @@ td.store-row {
     font-size: 18px;
 }
 
-/* PRODUCT DISPLAY */
+/**
+ * PRODUCT DISPLAY
+ */
+
+.group-left .field-name-field-image {
+    margin: 10px 20px 20px;
+}
+
 .commerce-product-title {
     font-family: "Bebas Neue", arial, helvetica, sans-serif;
     font-size: 30px;
@@ -350,7 +368,7 @@ td.store-row {
 
 .commerce-product-sku {
     font-family: arial, helvetica, sans-serif;
-    font-size: 10pt;
+    font-size: 10px;
     color: #737373;
 }
 

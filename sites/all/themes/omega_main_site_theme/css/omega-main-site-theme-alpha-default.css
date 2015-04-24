@@ -11,16 +11,29 @@ body {
  */
 #zone-top-nav-wrapper {
     background-color: black;
-	/**position: fixed;
+	position: fixed;
 	width: 100%;
-	z-index: 999;**/
+	z-index: 500;
 	height: 30px;
+}
+
+#block-block-9 {
+	width: 500px;
+	height: 0px;
+}
+
+.top-nav-slogan {
+	color: white;
+	margin-bottom: 0px;
+	display: inline;
+	position: relative;
+	top: 4px;
 }
 
 #zone-main-nav-wrapper {
     background-color: #333232;
 	height: 75px;
-	/**padding-top: 30px;**/
+	padding-top: 30px;
 }
 
 /** NOTE:
@@ -57,6 +70,11 @@ body {
 
 #top-menu-logout {
     background-color: #0b9900;
+}
+
+/* This is temporary. */
+#top-menu-cart {
+	background-color: #0b9900;
 }
 
 #region-main-nav a.menu {
